@@ -17,6 +17,6 @@ Academic portfolio to show case student profile, projects,skills, amd also acade
 
 ## Running Locally
 ```bash
-git clone https://github.com/Kreeper20/Odianosen-Osse-Iyoha-Portfloio
-cd Odianosen-Osse-Iyoha-Portfloio
+git clone https://github.com/Kreeper20/Odianosen-Portfolio
+cd Odianosen-Portfolio
 ```
