@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Odianosen Ose-Iyoha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-logo">Kess<span>·</span></a>
+      <ul class="nav-links" role="list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-label">Say Hello</p>
+      <h1>Get In Touch</h1>
+      <p>Whether it's a collab, a question, or just to say hi, my inbox is open.</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <div class="fade-in">
+          <p class="section-label">Contact Info</p>
+          <h2 class="section-title">Let's Connect</h2>
+          <div class="section-rule"></div>
+          <p>I'm always open to discussing new projects, internship opportunities, hackathon collabs, or just chatting about tech. Fill in the form and I'll get back to you within 48 hours.</p>
+
+          <div style="margin-top:32px;">
+            <div class="contact-detail">
+              <span class="contact-icon"><img src="../assets/envelope.png" alt="mail" style="width:20px; height:18px;"/></span>
+              <div class="contact-detail-text">
+                <strong>Email</strong>
+                <a href="mailto:o.ose-iyoha3772@gmail.com">o.ose-iyoha3772@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-icon"><img src="../assets/phone-call.png" alt="Phone" style="width:20px; height:18px;" /></span>
+              <div class="contact-detail-text">
+                <strong>Phone</strong>
+                <a href="tel:+2347040527918">+234 7040 527 918</a>
+              </div>
+            </div>
+            
+          </div>
+
+          <div>
+            <p style="font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--amber);margin:28px 0 14px;">Find Me Online</p>
+            <div class="social-links">
+              <a href="https://github.com/Kreeper20" class="social-link" title="GitHub" aria-label="GitHub">
+                <img src="../assets/github.png" alt="GitHub" style="width:25px; height:25px;" />
+              </a>
+              <a href="https://www.linkedin.com/in/kessington-ose-iyoha-a0265b291" class="social-link" title="LinkedIn" aria-label="LinkedIn">
+                <img src="../assets/linkedin.png" alt="LinkedIn" style=" height:18px;" />
+              </a>
+              <a href="https://x.com/kreep_er2000?s=11" class="social-link" title="Twitter/X" aria-label="Twitter">
+                <img src="../assets/twitter.png" alt="Twitter/X" style="width:18px; height:18px;" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card fade-in stagger-2">
+          <h3>Send Me a Message</h3>
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cf-name">Full Name *</label>
+                <input required type="text" id="cf-name" class="form-control" placeholder="Your Name" />
+                <span class="field-error" id="err-name"></span>
+              </div>
+              <div class="form-group">
+                <label for="cf-phone">Phone Number *</label>
+                <input type="tel" required id="cf-phone" class="form-control" placeholder="08012345678" />
+                <span class="field-error" id="err-phone"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Email Address *</label>
+              <input type="email" required id="cf-email" class="form-control" placeholder="your.email@example.com" />
+              <span class="field-error" id="err-email"></span>
+            </div>
+            <div class="form-group">
+              <label for="cf-message">Message *</label>
+              <textarea id="cf-message" required class="form-control" placeholder="Tell me what's on your mind..."></textarea>
+              <span class="field-error" id="err-message"></span>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:8px;">
+              Send Message
+            </button>
+          </form>
+          <div class="form-success" id="form-success">
+             Message sent! Thanks for reaching out
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+
+   <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="../index.html" class="nav-logo">Kess<span>·</span></a>
+          <p> Software Engineering student at the MIVA University. Building the web, one line at a time.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="../index.html">Home</a>
+          <a href="about.html">About Me</a>
+          <a href="projects.html">Projects</a>
+          <a href="planner.html">Planner</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a target="_blank" href="https://github.com/Kreeper20">GitHub</a>
+          <a target="_blank" href="https://www.linkedin.com/in/kessington-ose-iyoha-a0265b291">LinkedIn</a>
+          <a target="_blank" href="https://x.com/kreep_er2000?s=11">Twitter/X</a>
+          <a href="contact.html">Send a Message</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Odianosen Ose-Iyoha Portfolio. Built with HTML, CSS & JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

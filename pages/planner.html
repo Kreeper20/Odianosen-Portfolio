@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academic Planner - Odianosen Ose-Iyoha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-logo">Kess<span>·</span></a>
+      <ul class="nav-links" role="list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html" class="active">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-label">Stay Organised</p>
+      <h1>Academic Planner</h1>
+      <p>Add tasks, track progress, and crush your deadlines. Data is saved to your browser.</p>
+    </div>
+  </section>
+
+  <section class="planner-section">
+    <div class="container">
+      <div class="planner-layout">
+
+        <aside>
+          <div class="planner-form-card fade-in">
+            <h3> Add New Task</h3>
+            <form id="planner-form" novalidate>
+              <div class="form-group">
+                <label for="task-title">Task Title *</label>
+                <input type="text" id="task-title" class="form-control" placeholder="e.g. Finish CSC301 assignment" required autocomplete="off" />
+              </div>
+              <div class="form-group">
+                <label for="task-course">Course / Subject</label>
+                <input type="text" id="task-course" class="form-control" placeholder="e.g. Data Structures" autocomplete="off" />
+              </div>
+              <div class="form-group">
+                <label for="task-due">Due Date</label>
+                <input type="date" id="task-due" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="task-priority">Priority</label>
+                <select id="task-priority" class="form-control">
+                  <option value="medium">Medium</option>
+                  <option value="high">High</option>
+                  <option value="low">Low</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Add Task</button>
+            </form>
+          </div>
+
+          <div class="planner-form-card fade-in" style="margin-top:20px;padding:20px 24px;">
+            <h4 style="font-family:var(--font-body);font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--amber);margin-bottom:14px;">Priority Legend</h4>
+            <div style="display:flex;flex-direction:column;gap:10px;font-size:.875rem;color:var(--slate);">
+              <div style="display:flex;align-items:center;gap:10px;"><span class="priority-dot priority-high"></span> High - Urgent, due soon</div>
+              <div style="display:flex;align-items:center;gap:10px;"><span class="priority-dot priority-medium"></span> Medium - Important, not urgent</div>
+              <div style="display:flex;align-items:center;gap:10px;"><span class="priority-dot priority-low"></span> Low - Do when possible</div>
+            </div>
+            <hr style="margin:16px 0;border:none;border-top:1px solid var(--cream-dk);" />
+            <p style="font-size:.8rem;color:var(--slate-lt);max-width:none;">Click the circle on a task to mark it complete. Tasks are saved automatically.</p>
+          </div>
+        </aside>
+
+        <div>
+          <div class="planner-summary fade-in">
+            <div class="summary-card">
+              <div class="summary-number" id="stat-total">0</div>
+              <div class="summary-label">Total</div>
+            </div>
+            <div class="summary-card">
+              <div class="summary-number" id="stat-done" style="color:var(--success);">0</div>
+              <div class="summary-label">Done</div>
+            </div>
+            <div class="summary-card">
+              <div class="summary-number" id="stat-pending" style="color:var(--danger);">0</div>
+              <div class="summary-label">Pending</div>
+            </div>
+          </div>
+
+          <div class="planner-controls fade-in">
+            <button class="filter-btn active" data-filter="all">All Tasks</button>
+            <button class="filter-btn" data-filter="active">Pending</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+            <span class="task-count" id="task-count">0 tasks</span>
+          </div>
+
+          <div id="task-list" class="task-list">
+            <div class="empty-state"><img src="../assets/postbox.png" alt="No tasks" />
+              <p>No tasks yet. Add one on the left!</p></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+   <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="../index.html" class="nav-logo">Kess<span>·</span></a>
+          <p> Software Engineering student at the MIVA University. Building the web, one line at a time.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="../index.html">Home</a>
+          <a href="about.html">About Me</a>
+          <a href="projects.html">Projects</a>
+          <a href="planner.html">Planner</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a target="_blank" href="https://github.com/Kreeper20">GitHub</a>
+          <a target="_blank" href="https://www.linkedin.com/in/kessington-ose-iyoha-a0265b291">LinkedIn</a>
+                    <a target="_blank" href="https://x.com/kreep_er2000?s=11">Twitter/X</a>
+
+          <a href="contact.html">Send a Message</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Odianosen Ose-Iyoha Portfolio. Built with HTML, CSS &amp; JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
