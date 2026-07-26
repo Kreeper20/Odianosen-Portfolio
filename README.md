@@ -2,7 +2,7 @@
 Academic portfolio to show case student profile, projects,skills, amd also academic planner to plan events
 
 ## Live Demo
-[View Live →](https://odianosen-osse-iyoha-portfloio.vercel.app)
+[View Live →](https://kreeper20.github.io/Odianosen-Portfolio/index.html)
 
 ## Built With
 - Html
